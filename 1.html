@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemArray = [9, 8, 7, 6, 5, 8, 6];
+    let averageDiem = findAvg(diemArray);
+    function findAvg(diem) {
+        if (diem.length === 0) {
+            return 0;
+        }
+        let total = diem.reduce(function (sum, diem) {
+            return sum + diem;
+        },0);
+        let avg = total / diem.length;
+        return avg;
+    }
+    console.log("Điểm trung bình là:", averageDiem);
+</script>
+</body>
+</html>
